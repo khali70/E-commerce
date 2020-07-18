@@ -1,0 +1,110 @@
+:root {
+  --mainBlue: #2a2a82;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+body {
+  font-family: "Oswald", sans-serif !important;
+  background-color: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Permanent Marker", Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+::selection {
+  color: aliceblue;
+  background-color: coral;
+}
+.text-title {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.main-blue {
+  color: var(--mainBlue);
+}
+.light-blue {
+  color: var(--lightBlue);
+}
+.NavWarpper {
+  background-color: var(--mainBlue);
+}
+.NavWarpper .nav-link {
+  color: var(--mainWhite) !important;
+  font-size: 1.3rem;
+}
+
+.itemWrapper:hover .card {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.itemWrapper:hover .card-footer {
+  background: rgba(247, 247, 247);
+}
+.itemWrapper .card {
+  border-color: transparent;
+  transition: all 0.5s linear;
+}
+.itemWrapper .card-footer {
+  background: transparent;
+  border-top: transparent;
+  transition: all 0.5s linear;
+}
+
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+}
+.imgContainer:hover .card-img-top {
+  transform: scale(1.2);
+}
+.card-img-top {
+  transition: all 0.5s linear;
+}
+.cartBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  background-color: var(--lightBlue);
+  color: var(--mainWhite);
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0;
+  transform: translate(100%, 100%);
+  transition: all 0.5s linear;
+}
+.cartBtn:hover {
+  color: var(--mainBlue);
+  cursor: pointer;
+}
+.imgContainer:hover .cartBtn {
+  transform: translate(0, 0);
+}
+.btnBlack {
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+.btnBlack:hover {
+  background-color: var(--mainDark) !important;
+  color: var(--mainWhite);
+}
+.cartIcon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
