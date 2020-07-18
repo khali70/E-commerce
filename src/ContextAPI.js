@@ -139,7 +139,6 @@ class Provider extends Component {
 
   render() {
     return (
-      // provier
       <Context.Provider
         value={{
           ...this.state,
