@@ -13,4 +13,5 @@ to use this app you need
 
 1. open the project in the terminal or CMD
 2. run command `yarn install`
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. then `yarn start`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
